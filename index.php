@@ -1,14 +1,13 @@
 <?php
 
-$arr = array();
+include_once './dashboard/Dashboard.php';
 
 
-$arr = [
-    "nev" => "Simon",
-    "szul" => "1985.12.02"
-];
+$d = new Dashboard();
+
+
+$arr = $d->getData();
 
 
 echo json_encode($arr);
-
 ?>
